@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTMS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <div class="logo">
+            <a href="#"><img src="logo.png"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="front.html">Home</a>
+            <a href="packages.html" target="_blank">Packages</a>
+            <a href="#services">Services</a>
+            <a href="reviews.html" target="_blank">Reviews</a>
+            <a href="contact.html" target="_blank">Contact</a>
+            <a href="AbotUs.html" target="_blank">About Us</a>
+
+        </nav>
+        <div class="icons">
+
+            <i class="fas fa-user" id="login-btn">Sign in</i>
+            <i class="fas fa-user-plus" id="register-btn">Sign up</i>
+            <i class="fas fa-search" id="search-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+    <!--login form!-->
+    <section class="forms">
+        <div class="login-form" id="login-form">
+            <i class="fas fa-times" id="form-close"></i>
+            <form action="">
+                <h3>Hello, Again!</h3>
+                <p style="text-align: center;">we are happy to have you back.</p>
+                <input type="email" class="box" placeholder="enter your email">
+                <input type="password" class="box" placeholder="enter your password">
+                <input type="submit" value="Sign In" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">remember me</label>
+
+                <p>forget password?<a href="#">click here</a></p>
+            </form>
+        </div>
+
+        <div class="registration-form" id="registration-form">
+            <i class="fas fa-times" id="form1-close"></i>
+            <form action="">
+                <h3>Sign Up, now!</h3>
+                <p style="text-align: center;">we are happy to have you with us.</p>
+                <input type="text" class="box" placeholder="First name" id="fname">
+                <input type="text" class="box" placeholder="Last Name" id="lname">
+                <input type="email" class="box" placeholder="email" id="r-email">
+                <input type="password" class="box" placeholder="password" id="r-password">
+                <input type="password" class="box" placeholder="confirm password" id="c-password">
+
+                <section id="password-checklist" style="display: none;">
+                    <ul>
+                        <li id="uppercase-check">At least one uppercase letter</li>
+                        <li id="lowercase-check">At least one lowercase letter</li>
+                        <li id="number-check">At least one number</li>
+                        <li id="symbol-check">At least one symbol ($@$!%*?&)</li>
+                        <li id="length-check">Minimum length of 6 characters</li>
+                    </ul>
+                </section>
+
+                <button onclick="validateForm()" class="btn">sign up</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="pi-1.jpg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="subject" placeholder="subject">
+                </div>
+                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+        </div>
+    </section>
+
+
+
+
+ <section class="footer">
+        <div class="box-container">
+            
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">book</a>
+                <a href="#">packages</a>
+                <a href="#">services</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/jobs/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="box">
+                <h3>about us</h3>
+                <p>"Explore Unseen" is a dynamic and innovative group dedicated to providing unique and unforgettable
+                    experiences to our clients. Our mission is to help individuals and groups discover the world in a
+                    new and exciting way, breaking away from the traditional tourist traps and offering authentic and
+                    off-the-beaten-path adventures.</p>
+            </div>
+        </div>
+        <h1 class="credit">created by <span>TTMS team</span> | all rights reserved</h1>
+    </section>
+
+
+
+<script src="script.js"></script>
+    </body>
+    </html>
